@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+body{
+    background-color: black;
+}
+.box{
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    height: 60px;
+    padding: 1rem;
+    border-radius: 5%;
+}
+.card{
+    height: 300px;
+    width: 400px;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin: 10rem;
+    padding: 4rem;
+    background-color: white;
+
+}
+.box{
+    background-color: #FF00FF;
+    width: 300px;
+    border-radius: 5%;
+}
+@media screen and (max-width: 480px)  {
+    .box{
+        top: 25%;
+        left:18%;
+        width: 230px;
+        padding: 0.5rem;
+    }
+    .card{
+        top: 50%;
+        width: 300px;
+        left: -100px;
+        margin-left: 2rem;
+        
+    }
+}
+@media screen and (max-width: 768px){
+    .box{
+        left:25%;
+        top:28%;
+        padding: 1rem;
+    }
+}

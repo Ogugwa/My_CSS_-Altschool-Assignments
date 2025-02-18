@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+.navbar{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;    
+}
+.navlist{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;    
+    width: 476px;
+}
+.navbutton{
+    width: 91px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -0.5rem;
+    /* height: 40px; */
+}
+.navline{
+    margin: 0.5rem;
+}
+
+.fullpage{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    height: 845px;
+}
+.frame1{
+    width: 50vw;
+    height: 795px;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid white;
+    box-shadow: 0px 5px 15px 0px #0000000D;
+    box-shadow: 0px 15px 35px 0px #2B404E18;
+    box-sizing: border-box;
+}
+.heading{
+    /* border: 3px dotted greenyellow; */
+    margin-bottom: 1rem;
+    height: 80px;    
+}
+h1{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 1.88rem;
+    width: 161px;
+    height: 54px;
+    padding-left: 1rem;
+}
+
+.firstform{
+    /* border: 3px solid blue; */
+    margin-top: 1rem;
+    /* padding-left: 1rem; */
+    height: 221px;
+}
+.firstform>h3{
+    width: 260px;
+}
+.rounded{
+    border: 1px solid #1179c0;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    font-weight: bold; 
+    font-size: 16px; 
+    margin-right: 5px; 
+    color: #1179c0;
+}
+.segment1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 1rem; */
+    gap: 1rem; /* Add space between inputs */
+    margin: 0 1rem;
+}
+label{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+input{
+    margin-top: 0.5rem;
+    background-color: #EDEFF2;
+    height: 36px;
+    border-radius: 4px;
+}
+.Firstname,.Lastname, .mailspan, .creditCard{
+    margin-top: 0.7rem;
+}
+.Firstname>input,.Lastname>input{
+    width: 226px;
+}
+.mailspan>input{
+   width: 370px;
+} 
+.segment2{
+    /* border: 2px solid violet; */
+    padding: 1rem;
+    height: 154px;
+}
+.creditCard{
+    padding-left: 0.7rem;
+}
+.creditCard>input{
+    width: 483px;
+}
+.pushsegment{
+    width: calc(100% - 2rem); /* Responsive width considering padding */
+    height: 146.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 1.5rem;
+    box-sizing: border-box;
+}
+.wpbutton{
+    width: 490px;
+    height: 52px;
+    border-radius: 5px;
+    background-color:#038E7D;
+    margin-bottom: 0.5rem;
+    color: white;
+    /* margin-top: -3px; */
+}
+.stripebutton{
+    /* width: 0.7rem; */
+    height: 20.1px;
+    background-color: #566473;  
+    color:#DADADA;
+    opacity: 50.2%;
+    font-size: 0.7rem;
+    align-content: center;
+    /* text-align: center; */
+    border-radius: 0.3rem;
+    /* color: white; */
+}
+.stripe{
+    font-size: 1rem;
+}
+.helpline{
+    width: 333px;
+    height: 20px;
+    margin-bottom: 2rem;
+}
+.frame2{
+    background-color:#1179BF;
+    height: 795px;
+    width: 25vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.promo1{
+    width: 231px;
+    height: 152px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+.promo1>h3{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0.5rem;
+}
+.dollarprice{
+    width: 140px;
+    height: 72px;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.01px;
+    margin-bottom: 0.5rem;
+
+}
+.dollarsign{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: -0.01px;
+}
+.year{
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: -0.01px;
+
+}
+.dollartext{
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+
+}
+.promolist{
+    padding: 1rem; /* Adds spacing around the checklist */
+    text-align: left;
+    margin-left: -4rem;
+}
+.checklist {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+.checklist li {
+    display: flex; /* Aligns text with any icons or markers */
+    align-items: center; /* Ensures vertical alignment */
+    margin-bottom: 10px; /* Adds space between list items */
+}
+.checklist li::before {
+    content: "✔"; /* Adds a checkmark before each item */
+    margin-right: 10px; /* Adds spacing between the checkmark and text */
+    color:#DADADA; /* Checkmark color */
+    font-size: 12px; /* Adjusts the size of the checkmark */
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid #DADADA;
+    width: 16px;
+    height: 16px;
+}
+.switchagency{
+    width: 184px;
+    height: 51px;
+    margin-left: -1.5rem;
+    margin-bottom: 2rem;
+}
+.switchagency>p{
+    margin-bottom: 0.5rem;
+}
+.linkchange a{
+    color:#B9F5FF;
+}
+.changecolor{
+    margin-bottom: 2rem;
+}
+.lastdiv{
+    width: 229px;
+    height: 196px;
+}
+.ftpline{
+    width: 227px;
+    height: 96px;
+    margin-bottom: 1rem;
+}
+.kirkimage{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+footer{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

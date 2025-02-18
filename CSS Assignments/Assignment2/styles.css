@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    color: #009966;
+}
+.main{
+    margin-top: 96px;
+    margin-left: 264px;
+    padding: 20px;
+    height: 312px;
+}
+#tophead{
+    font-family: "lato",serif;
+    font-size: 800;
+    margin-bottom: 1rem;
+    size: 32px;
+    line-height: 38.4px;
+}
+.paragraph{
+    font-family: "lato",serif;
+    font-size: 400;
+    size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.divider{
+    background:  #666666;
+    padding: 4rem;
+    
+}
+.second{
+    background: white;
+    width: 808px;
+    height: 312px;
+    border: 0px 0px 8px 0px;
+    margin-left: 232px;
+    padding: 6rem;
+}
+.outliner{
+    position: absolute;
+    width: 398px;
+    height: 60px;
+    top: 480px;
+    left: 290px;
+    gap: 0px;
+    border: 0px 0px 8px 0px;
+    opacity: 0px;
+    background: #FFBF00;
+    padding: 1rem;
+}
+.outliner>h3{
+    font: "lato",serif;
+    font-weight: 800;
+    size: 24px;
+    width: 334px;
+    line-height: 28.8px;
+}
+.secondParagraph{
+    margin-bottom: 2rem;
+}
+/* Media Queries for Phone */
+@media screen and (max-width:480px) {
+    .main{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .divider{
+        padding:1rem 0;
+    }
+    .second{
+        margin: 1px;
+        padding-top: 7rem;
+        padding-left: 1rem;
+        /* padding: 7rem 1rem; */
+        width: auto;
+        height: 100vh;
+    }
+    .outliner{
+        top: 365px;
+        left: 0;
+        width: 90vw;
+        height: 82px;
+        padding: 1.5rem;
+    }
+    .outliner>h3{
+        width: 318px;
+        height: 58px;
+    }
+}
+    @media screen and (max-width:780px){
+        .main{
+            margin-top: 2rem;
+            margin-left: 1rem;
+        }
+        .divider{
+            padding:1rem 0;
+            width: 776px;
+        }
+        .second{
+            margin: 1px;
+            padding-top: 7rem;
+            padding-left: 1rem;
+            width: auto;        
+            height: 312px;
+        }
+        .outliner{
+            top: 365px;
+            left: 0;
+            width: 90vw;
+            height: 60px;
+            padding: 1.5rem;
+        }
+        .outliner>h3{
+            width: 334px;
+            height: 29px;
+        }
+    }

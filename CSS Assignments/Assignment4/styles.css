@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7fdfd;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 2rem;
+    /* border: 2px solid red; */
+    height: 100vh;
+}
+.segment1{
+    /* border: 2px dotted blue; */
+    width: 50vw;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-left: 6rem;
+}
+.segment1>img{
+    height: 80px;
+    width: 77.3px;    
+}
+h1{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+.ptext{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.ptext2{
+    display: none;
+}
+.segment2{
+    /* border: 2px solid black; */
+    width: 50vw;
+    height: 100vh;
+}
+
+form{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    /* border: 1px dotted red; */
+    gap: 1rem; /*Add space between items */
+    max-width: 600px;
+    height: 100vh;
+}
+label{
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+input,select{
+    width: 90%;
+    height: 48px;
+    font-size: 14px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+.form7, .form8, .form9, .form10{
+    grid-column: 1/span 2;
+}
+.form9 >button{
+    height: 48px;
+    width: 500px;
+    background-color: #2ec5b6;
+    border-radius: 5px;
+    font-family: "Sofia", serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+.link{
+    color: #2ec5b6;
+}
+.outliner{
+    display: none;
+}
+/* Media Query for Mobile */
+@media screen and (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        margin-top: 0.5rem;
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid red;  */
+    }
+    .segment1{
+        /* border: 2px dotted blue;  */
+        width: 90vw;
+        margin: 0;
+        padding: 2px;
+        height: 30vh;
+
+    }
+    .segment1>img{
+        height: 40px;
+        width: 39px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 0;
+    }
+    .ptext{
+        display: none;
+    }
+    .ptext2{
+        display: inline;
+    }
+    .segment2{
+        /* border: 2px solid black; */
+        width: 90vw;
+        height: 1000px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        height: 860px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    .form9 >button{
+        width: 77vw;
+    }
+    .form10{
+        display: none;
+    }
+    .outliner{
+        display: inline;
+        /* border: 3px solid blueviolet; */
+        font-family: "Sofia", serif;
+        font-weight: 400;
+        font-style: 14px;
+        text-align: center;
+        
+    }
+}

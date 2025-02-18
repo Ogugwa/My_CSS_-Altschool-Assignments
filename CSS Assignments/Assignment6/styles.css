@@ -1,0 +1,365 @@
+@font-face {
+    font-family: "Gilroyfont";
+    src: url(./fonts/Gilroy-Bold.ttf) format('truetype');
+    font-weight:normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background-color: #fcfbed; 
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+nav{
+    margin: 1rem;
+    width: 72rem;
+    position:fixed;
+    top:0;
+    left:7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoimg{
+    width: 9.7rem;
+    height: 2.5rem;
+    gap: 0.5rem;
+}
+.navlist1{
+    margin: 0.5rem;
+    width: 32rem;
+    height: 1.5rem;    
+    display: flex;
+    flex-direction: row;
+}
+.navlist1> ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+}
+.navlist1 >ul >li{
+    width: auto;  
+}
+.navlogin{
+    width: 13.2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+.navlogin>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+.freebutton{
+    width: 8.9rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+    background-color:#0065FE;
+    color: white;
+    margin-right: -1rem;
+}
+.herosection{
+    width: 59.25rem;
+    height: 24.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0.5rem;
+}
+.herosection1 >h1{
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 44px;
+    line-height: 96px;  
+    text-align: center;
+}
+.herosection1>img{
+        position: relative;
+        left: 23rem;
+        margin-top:-2rem;
+}
+.herocolor{
+    color: #005AE2;
+}
+.herosection1>p{
+    margin-top:1rem;
+    font-family: Gilroy-Medium, sans-serif;
+    width: 48.8rem;
+    font-size: 18px;
+    margin-left: 4rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.herobutton{
+    width: 17.65rem;
+    height: 2.75rem;
+}
+.herobutton>button{
+    width: 8.875rem;
+    height: 2.75rem;
+    border-radius: 6.25rem;
+    background-color:#0065FE;
+    color: white;
+    padding: 12px 24px 12px 24px;
+    margin-right: 3rem;
+}
+.herobutton>a{
+    font-family: Gilroy-SemiBold, sans-serif;
+    font-size: 1rem;
+    line-height: 1.17rem;
+    color: #0065FE;
+    text-decoration: none;
+}
+.herocontinued{
+    margin-top: 5rem;
+    width: 52rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 9rem;
+}
+.herosectionB{
+    margin-top: 1rem;
+    width: 48rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3.4rem;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(212px);
+    background: #E2E9F0;
+    padding: 40px 60px 40px 60px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    gap: 1rem;
+} 
+.herosectionB >img{
+    width: 24rem;
+    height: 5rem;
+    gap: 1.25rem;
+    margin-left: -18rem;
+    background: #E2E9F0;
+}
+.herosectionB >p{
+    font-family: Gilroy-SemiBold,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: #E2E9F0;
+    color: #141414;
+}
+.Bold{
+    font-weight: bold;
+    background: #E2E9F0;
+}
+.mirrorimage{
+    margin-top: -3rem;
+    width: 90rem; 
+    height: 5.813rem;
+} 
+ .mirrorimage>img{
+    width: 90rem;
+    height: 5.813rem;
+ }
+ .herosection3{
+    width: 90.3rem;
+    height: 13.75rem;
+    padding: 2rem;
+    padding-left: 3rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+ }
+ .herose3ction3b{
+    width:44.313rem;
+    height:6.25rem;
+    padding:1rem;
+    display:flex;
+    flex-direction:row;
+    gap:4.5rem;
+ }
+ /* Features Section Styling */
+ .featurescontainer{
+    /* border: 2px solid red; */
+    width: 75.131rem;
+    height: 31.5rem;
+    padding: 1rem;
+    padding-top: 0;
+    gap: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-content: center;
+    /* background-color: white; */
+ }
+ .features1{
+    /* width:24.881rem; */
+    height:16rem;
+
+ }
+ .features1 >h2{
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    line-height: 2rem;
+    padding: 3px;
+ }
+ .features1 >h2::before{
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: 0.3rem;
+    width: 4px;
+    height: 3rem;
+    background: linear-gradient(180deg, #112232 0%, rgba(77, 107, 136, 0) 100%);
+
+ }
+ .features1>p{
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 1rem;
+    line-height: 28px;
+ }
+ .features2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+ .griddivider{
+    width: 21.25rem;
+    height: 13.75rem;
+    gap:2.5rem;
+ }
+ .griddivider >img{
+    margin-bottom:1rem;
+ }
+ .griddivider >h3{
+    margin-bottom:1rem;
+    font-family: Gilroy-SemiBold,sans-serif;
+    font-size: 2rem;
+    /* line-height: 28px; */
+ }
+ .griddivider>p{
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 1rem;
+    /* line-height: 24px; */
+ }
+ .cardsection{
+    border: 2px solid blue;
+    width: 90rem;
+    height: 67.063rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .cardsection1{
+    margin-top: 1.5rem;
+    width: 36.006rem;
+    height: 6.75rem;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .cardsection1>h2{
+    font-family: Gilroy-Bold,sans-serif;
+    font-size: 2.3rem;
+    position: relative;
+    /* line-height: 3rem; */
+    /* text-align: center; */
+
+ }
+ .cardsection1 > h2::before{
+    content: "";
+    position: absolute;
+    left: -1.4rem;
+    top: 0.3rem;
+    width: 4px;
+    height: 3rem;
+    background: linear-gradient(180deg, #112232 0%, rgba(77, 107, 136, 0) 100%);
+
+ }
+ .cardsection1 >p{
+    font-family: Gilroy-Medium,sans-serif;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+ }
+ .cardsection2{
+    border: 2px solid red;
+    margin-top: 2rem;
+    width: 68rem;
+    height: 39.188rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+ }
+ .cardsection2a{
+    border-radius: 0.75rem;
+    width: 23.688rem;
+    height: 28.438rem;
+    border: 0.4px solid #005AE2;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+ }
+ .cardsection2a >ul{
+    list-style: none;
+ }
+ .formsegment{
+    width: 90rem;
+    height: 32.688rem;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .FAQSection{
+    border: 2px solid red;
+    width: 90rem;
+    height: 72.063rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+ }
+ .revsection{
+    width: 90rem;
+    height: 18.688rem;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    display: flex;
+    justify-content: center;
+ }
+ footer{
+    width: 90rem;
+    height: 35.063rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+ }
